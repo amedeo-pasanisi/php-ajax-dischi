@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-color: #1E2D3B;
+    height: 100%;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.disco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 5 - 20px);
+    margin: 0 10px;
+    padding: 20px;
+    color: white;
+    background-color: #424c55;
+}
+
+.disco * {
+    margin-bottom: 10px;
+}
+
+.disco img {
+    width: 100%;
+}
