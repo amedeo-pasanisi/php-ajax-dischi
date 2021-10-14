@@ -1,6 +1,3 @@
-<?php
-    include __DIR__ . '/database.php';
-?>
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -12,7 +9,7 @@
     <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap' rel='stylesheet'>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/vue'></script>
-    <link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='css/style.css'>
     <title>Dischi</title>
 </head>
 <body>
@@ -27,9 +24,6 @@
         </div>
     </main>
 
-    <script src='main.js'></script>
+    <script src='js/main.js'></script>
 </body>
 </html>
-<?php
-
-?>
