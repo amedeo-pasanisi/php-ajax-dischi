@@ -13,16 +13,22 @@
     <title>Dischi</title>
 </head>
 <body>
-    <main id="root">
-        <div class='container'>
-            <div v-for='disco in dischi' class='disco'>
+    <div id="root">
+        <header>
+            <select @change = 'filter' v-model= "value">
+                <option value="tutti">Tutti</option>
+                <option v-for="genre in genres" :value="genre">{{genre}}</option>
+            </select>
+        </header>
+        <main class='container'>
+            <div v-for='disco in dischiFiltered' class='disco'>
                 <img :src= 'disco.poster'>
                 <h3>{{disco.title}}</h3>
                 <div>{{disco.author}}</div>
                 <div>{{disco.year}}</div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <script src='js/main.js'></script>
 </body>
